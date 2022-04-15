@@ -51,13 +51,22 @@
 
 .slider {
     position: relative;
-    margin-top: 46.5px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 204, 0, .3);
+    margin-top: 16px;
 }
 
 .slider__mySlides {
     display: none;
     text-align: center;
+    max-height: 416px;
+}
+
+.slider__mySlides img {
+    width: 740px;
+    height: 416px;
 }
 
 .active {
@@ -67,5 +76,52 @@
 .fade {
     animation-name: fade;
     animation-duration: 0.8s;
+}
+
+/* Place */
+.content__place-container {
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    /* background-color: var(--primary-color); */
+}
+
+.content__place-card {
+    margin: 0 8px;
+    width: 28%;
+    margin-top: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    max-width: 25%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.content__place-card-body {
+    background-color: #fff;
+    font-size: 15px;
+    padding: 16px;
+}
+
+.content__place-card-img {
+    margin-top: 16px;
+    width: 100%;
+    display: block;
+    min-height: 200px;
+}
+
+.content__place-card-img:hover {
+    opacity: 0.6;
+}
+
+.content__place-subheading {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.content__place-desc {
+    margin: 15px 0;
+    line-height: 1.4;
 }
 
