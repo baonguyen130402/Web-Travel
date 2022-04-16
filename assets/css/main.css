@@ -1,7 +1,8 @@
 /* TODO: Header */
 .header {
     background-color: var(--primary-color);
-    height: 50%;
+    /* height: 40%; */
+    /* max-height: 36px; */
 }
 
 .header__navbar {
@@ -17,10 +18,10 @@
 }
 
 .header__navbar-item {
-    display: block;
+    display: inline-block;
     height: 100%;
     list-style-type: none;
-    padding: 0 8px;
+    padding: 8px;
     font-size: 1.3rem;
     position: relative;
     color: var(--text-color);
@@ -50,6 +51,15 @@
     align-items: center;
 }
 
+.header__navbar-search-btn:hover {
+    /* background-color: rgba(0, 39, 149, .8);*/
+    opacity: 0.9;
+}
+
+.header__navbar-menu-content {
+    display: none;
+}
+
 .header__navbar-icon:hover, 
 .header__navbar-item:hover {
     cursor: pointer;
@@ -65,16 +75,64 @@
     width: 100px;
     background-color: rgba(255, 204, 0, .6);
     position: absolute;
-    width: 925%;
     height: 100vh;
+    top: 36px;
+    width: 18.5%;
     left: 0;
-    top: 180%;
     display: none;
+    box-shadow: 1px 1px 10px #888888;
 }   
 
-.header__navbar-form:hover .header__navbar-item-form {
+.header__navbar-form-contain:hover .header__menu {
     display: block;
     z-index: 1;
+}
+
+.header__menu {
+    display: none;
+}
+
+.header__book-hotel {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    display: none;
+}
+
+.header__show-form-book-hotel:hover .header__book-hotel {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__book-hotel::before,
+.header__navbar-item-form::before {
+    content:"";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3%;
+    top: -12px;
+    left: 0;
+}
+
+.form-input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.header__book-hotel--btn {
+    padding: 8px 16px;
+    background-color: var(--text-color);
+    text-decoration: none;
+    color: var(--primary-color);
+    display: inline-block;
+    border: none;
+    margin-top: 20px;
+}
+
+.header__book-hotel--btn:hover {
+    background-color: rgb(0, 49, 149);
+    color: rgb(255, 219, 84)
 }
 
 .slider {
@@ -107,9 +165,6 @@
 }
 
 /* Place */
-.content > .content__place {
-}
-
 .content__place {
     margin-bottom: 0;
     display: flex;
@@ -156,9 +211,12 @@
     margin: 15px 0;
     line-height: 1.4;
 }
+
 .place-card-1:hover,
 .place-card-2:hover,
 .place-card-3:hover {
     animation: zoom-in 0.5s ease-out forwards;
 }
+
+
 

@@ -2,7 +2,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #002795;
-    --primary-color: #ffd154;
+    --primary-color: rgb(255, 209, 84);
 
 }
 
@@ -57,7 +57,66 @@ html {
 .place-card-1:hover .zoom {
     animation: scale 3s ease forwards;
 }
-    
+
+.form-left {
+    width: 100px;
+    background-color: rgba(255, 204, 0, .6);
+    position: absolute;
+    height: 100vh;
+    top: 52px;
+    width: 18.5%;
+    left: 0;
+    padding-top: 36px;
+    box-shadow: 1px 1px 10px #888888;
+}  
+
+.form-right {
+    width: 100px;
+    background-color: rgba(255, 204, 0, .6);
+    position: absolute;
+    height: 100vh;
+    top: 36px;
+    width: 18.5%;
+    right: 0;
+    /* display: none; */
+    box-shadow: 1px 1px 10px #888888;
+}
+
+/* input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+} */
+
+input[type=search] {
+    outline-offset: 0;
+    -webkit-appearance: none;
+}
+
+input[type=search]:focus {
+    border: 1px;
+}
+  
+
 @keyframes scale {
     0% {
         -webkit-transform:scale(1.0);
