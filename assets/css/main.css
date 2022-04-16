@@ -22,10 +22,35 @@
     padding: 0 12px;
     font-size: 1.6rem;
     position: relative;
+    color: var(--text-color);
+}
+
+.header__navbar-search {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__navbar-search-form {
+    flex: 1;
+    height: 30px;
+    border: 2px solid var(--text-color);
+}
+
+.header__navbar-search-btn {
+    background-color: var(--text-color);
+    width: 30px;
+    height: 30px;
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__navbar-icon:hover, 
 .header__navbar-item:hover {
+    cursor: pointer;
     color: rgba(255, 255, 255, 0.7)
 }
 
@@ -38,7 +63,7 @@
     width: 100px;
     background-color: rgba(255, 204, 0, .6);
     position: absolute;
-    width: 200px;
+    width: 925%;
     height: 100vh;
     left: 0;
     top: 180%;
@@ -47,6 +72,7 @@
 
 .header__navbar-form:hover .header__navbar-item-form {
     display: block;
+    z-index: 1;
 }
 
 .slider {
@@ -54,8 +80,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 204, 0, .3);
-    margin-top: 16px;
+    /* background-color: rgba(255, 204, 0, .3); */
+    padding-top: 16px;
 }
 
 .slider__mySlides {
@@ -79,23 +105,27 @@
 }
 
 /* Place */
-.content__place-container {
+.content > .content__place {
+}
+
+.content__place {
     margin-bottom: 0;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 16px;
-    /* background-color: var(--primary-color); */
+    background-color: var(--primary-color);
 }
 
 .content__place-card {
-    margin: 0 8px;
     width: 28%;
-    margin-top: 0px;
+    margin: 16px 0;
     padding-left: 8px;
     padding-right: 8px;
     max-width: 25%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #fff;
+    padding-top: 8px;
 }
 
 .content__place-card-body {
@@ -105,7 +135,6 @@
 }
 
 .content__place-card-img {
-    margin-top: 16px;
     width: 100%;
     display: block;
     min-height: 200px;
