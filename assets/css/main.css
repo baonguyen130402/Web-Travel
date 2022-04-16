@@ -1,7 +1,7 @@
 /* TODO: Header */
 .header {
     background-color: var(--primary-color);
-    height: 40px;
+    height: 50%;
 }
 
 .header__navbar {
@@ -17,12 +17,14 @@
 }
 
 .header__navbar-item {
-    display: inline-block;
+    display: block;
+    height: 100%;
     list-style-type: none;
-    padding: 0 12px;
-    font-size: 1.6rem;
+    padding: 0 8px;
+    font-size: 1.3rem;
     position: relative;
     color: var(--text-color);
+    font-weight: bold;
 }
 
 .header__navbar-search {
@@ -126,6 +128,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: #fff;
     padding-top: 8px;
+    position: relative;
 }
 
 .content__place-card-body {
@@ -152,5 +155,10 @@
 .content__place-desc {
     margin: 15px 0;
     line-height: 1.4;
+}
+.place-card-1:hover,
+.place-card-2:hover,
+.place-card-3:hover {
+    animation: zoom-in 0.5s ease-out forwards;
 }
 
