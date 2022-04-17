@@ -60,16 +60,16 @@
     display: none;
 }
 
-.header__navbar-icon:hover, 
+.header__navbar-icon-menu:hover, 
 .header__navbar-item:hover {
     cursor: pointer;
     color: rgba(255, 255, 255, 0.7)
 }
 
-/* .header__navbar-icon {
+.header__navbar-icon-menu {
     margin-left: 12px;
     font-size: 1.6rem;
-} */
+}
 
 .header__navbar-item-form {
     width: 100px;
@@ -175,11 +175,11 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 16px;
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    /* background-color: rgba(255, 204, 0, .3); */
 }
 
 .content__place-card {
-    width: 28%;
     margin: 16px 0;
     padding-left: 8px;
     padding-right: 8px;
